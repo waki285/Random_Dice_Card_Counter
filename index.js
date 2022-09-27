@@ -26,7 +26,7 @@ client.on("interactionCreate", (i) => {
     if (v > 45) {
         i.reply(`${eval(`4*${v}-109-(-1)**${v}`)}`);
     } else {
-        const p = Math.floor(v / 5);
+        const p = Math.floor(v / 5) || 5;
         i.reply(`${(p + (v % 5)) + (v % 5 >= 3 ? 1:0) + (v % 5 === 0 ? 2:0)}`);
     }
 });
