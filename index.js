@@ -23,7 +23,7 @@ client.on("ready", () => {
 client.on("interactionCreate", (i) => {
     if (!i.isChatInputCommand()) return;
     const v = i.options.getInteger("wave");
-    i.reply(eval(`4*${v}-109-(-1)**${v}`));
+    i.reply(`${eval(`4*${v}-109-(-1)**${v}`)}`);
 });
 
 client.login(process.env.TOKEN);
